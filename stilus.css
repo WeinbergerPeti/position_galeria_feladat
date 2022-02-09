@@ -104,6 +104,7 @@ article
     margin: 10px;
     max-width: 250px;
     border-radius: 5px;
+    position: relative;
 }
 
 form
@@ -140,4 +141,18 @@ legend
 footer
 {
     text-align: center;
+}
+.megjelen{
+    display: none;
+
+}
+.megjelen img{
+    max-width:600px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.kis_kepek:hover .megjelen{
+    display: block;
 }
