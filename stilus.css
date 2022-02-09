@@ -42,3 +42,8 @@ nav ul a
     margin: 5px;
 }
 
+
+nav{
+    position: fixed;
+}
+
