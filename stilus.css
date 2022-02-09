@@ -85,6 +85,7 @@ article
 {
     width: 80%;
     margin: auto;
+    position: relative; 
 }
 
 
@@ -97,14 +98,13 @@ article
     margin: auto;
 }
 
-.kis_kepek img
+.kis_kepek>img
 {
     border: 1px solid black;
     margin: auto;
     margin: 10px;
     max-width: 250px;
     border-radius: 5px;
-    position: relative;
 }
 
 form
@@ -144,14 +144,14 @@ footer
 }
 .megjelen{
     display: none;
-
+    position: absolute;
+    top: 50%; 
+    left: 10%;
+    right: 10%;
+    width: 100%;
 }
 .megjelen img{
-    max-width:600px;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 30%;
 }
 .kis_kepek:hover .megjelen{
     display: block;
