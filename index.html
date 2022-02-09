@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stilus.css" />
+        <title>Máté, Peti</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stilus.css">
-    <title>Máté, Peti</title>
-</head>
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">menü</a></li>
+                        <li class="legordulo">
+                            <a href="index.html">menü</a>
+                            <ul class="legordulo-elem">
+                                <li><a href="#">almenü</a></li>
+                                <li><a href="#">almenü</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">menü</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-<body>
-    <main>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">menü</a></li>
-                    <li class="legordulo"><a href="index.html">menü</a>
-                        <ul class="legordulo-elem">
-                            <li><a href="#">almenü</a></li>
-                            <li><a href="#">almenü</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="index.html">menü</a></li>
-                </ul>
-            </nav>
-        </header>
+            <article>
+                <h2>Position</h2>
 
-        <article>
-            <h2>Position</h2>
-
-            <div class="kepek_rendezese">
-                <div class="kis_kepek">
-                    <img src="kepek/tajkep1.jpg" alt="tájkép">
-                    <div class="megjelen"><img src="kepek/tajkep1.jpg" alt="tájkép "></div>
-                </div>
-                <div class="kis_kepek">
-                    <img src="kepek/tajkep2.jpg" alt="tájkép">
-                    <div class="megjelen">
-                        <img src="kepek/tajkep2.jpg" alt="tájkép">
+                <div class="kepek_rendezese">
+                    <div class="kis_kepek">
+                        <img src="kepek/tajkep1.jpg" alt="tájkép" />
+                        <div class="megjelen">
+                            <img src="kepek/tajkep1.jpg" alt="tájkép " />
+                        </div>
+                    </div>
+                    <div class="kis_kepek">
+                        <img src="kepek/tajkep2.jpg" alt="tájkép" />
+                        <div class="megjelen">
+                            <img src="kepek/tajkep2.jpg" alt="tájkép" />
+                        </div>
+                    </div>
+                    <div class="kis_kepek">
+                        <img src="kepek/tajkep3.jpg" alt="tájkép" />
+                        <div class="megjelen">
+                            <img src="kepek/tajkep3.jpg" alt="tájkép" />
+                        </div>
                     </div>
                 </div>
-                <div class="kis_kepek">
-                    <img src="kepek/tajkep3.jpg" alt="tájkép">
-                    <div class="megjelen"><img src="kepek/tajkep3.jpg" alt="tájkép"></div>
-                </div>
-            </div>
 
-            <section class="keret">
-                <div id="ablak">
-                    <form>
-                        <span class="bezar" onclick="bezar()">X</span>
-                        <fieldset>
-                            <legend>Tetszik a Position tulajdonság?</legend>
-                            <label for="igen" id="igen_gomb">Igen</label>
-                            <input type="radio" id="radio_gomb" name="radio_gomb" value="Igen">
-                            <label for="igen" id="nem_gomb">Nem</label>
-                            <input type="radio" id="radio_gomb" name="radio_gomb" value="Nem">
-                        </fieldset>
-                    </form>
-                </div>
-            </section>
-
-
-        </article>
-        <footer>
-            <p>&copy; Máté Peti készitette</p>
-        </footer>
-    </main>
-</body>
-<script>
-    function bezar()
-    {
-        console.console.log("hahó");
-        document.getElementById("ablak").style.display="none";
-    }
-</script>
+                <section class="keret">
+                    <div id="ablak">
+                        <form>
+                            <span class="bezar" onclick="bezar()">X</span>
+                            <fieldset>
+                                <legend>Tetszik a Position tulajdonság?</legend>
+                                <label for="igen" id="igen_gomb">Igen</label>
+                                <input
+                                    type="radio"
+                                    id="radio_gomb"
+                                    name="radio_gomb"
+                                    value="Igen"
+                                />
+                                <label for="igen" id="nem_gomb">Nem</label>
+                                <input
+                                    type="radio"
+                                    id="radio_gomb"
+                                    name="radio_gomb"
+                                    value="Nem"
+                                />
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+            </article>
+            <footer>
+                <p>&copy; Máté Peti készitette</p>
+            </footer>
+        </main>
+    </body>
+    <script>
+        function bezar() {
+           // console.console.log("hahó");/*csak egyszer kell a console.log() - kiír a konzolra egy üzenetet*/
+            document.getElementById("ablak").style.display = "none";
+        }
+    </script>
 </html>
