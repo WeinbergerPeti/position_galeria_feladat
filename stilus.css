@@ -1,27 +1,36 @@
-/* header
+*
 {
-    
-} */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header
+{
+    height: 100px;
+}
 
 nav
 {
-    display: block;
-    position: fixed;
-    top: 3%;
-    height: 100px;
-    background-color: aquamarine;
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    position: fixed; 
+    z-index: 1;
+    margin: 0px;
+    
 }
 
 nav ul
 {
     list-style-type: none;
+    float: left;
 }
 
 nav>ul
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 
 nav li
@@ -72,7 +81,11 @@ nav ul a
     margin: 5px;
 }
 
-
+article
+{
+    width: 80%;
+    margin: auto;
+}
 
 
 .kepek_rendezese
@@ -90,5 +103,6 @@ nav ul a
     margin: auto;
     margin: 10px;
     max-width: 250px;
+    border-radius: 5px;
 }
 
