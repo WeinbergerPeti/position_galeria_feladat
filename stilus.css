@@ -106,3 +106,38 @@ article
     border-radius: 5px;
 }
 
+form
+{
+    max-width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+fieldset
+{
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 40px 40px;
+}
+
+
+#ablak span
+{
+    float: right;
+    background-color: gray;
+    color: red;
+    padding: 5px;
+}
+
+legend
+{
+    margin-left: 5px;
+}
+
+footer
+{
+    text-align: center;
+}
